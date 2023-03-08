@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #2e7ba2;
+  background-color: #4650bd;
 
   width: 100%;
   padding: 32px 120px;
@@ -20,3 +20,27 @@
   gap: 32px;
 }
 
+@media screen and (max-width: 1130px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 60px;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 32px 30px;
+  }
+  .nav-bar__links ul {
+    text-align: center;
+    gap: 20px;
+  }
+
+  .nav-bar__links li {
+    margin: auto;
+  }
+}
