@@ -44,3 +44,20 @@
     margin: auto;
   }
 }
+
+.banner{
+  background: url('/Users/matheusmigge/Desktop/Alura/Codechella/codechella-festival-website/imagens/pexels-tobias-bjørkli-2113554.jpg');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 407px;
+
+}
+
+.banner h1{
+  font-family: 'Calistoga';
+  font-style: normal;
+  font-size: 64px;
+  line-height: 83px;
+}
