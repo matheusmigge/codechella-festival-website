@@ -1,72 +1,22 @@
-body{
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    text-decoration: none;
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2e7ba2;
+
+  width: 100%;
+  padding: 32px 120px;
 }
 
-header{
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 32px 120px;
-    gap: 32px;
-
-    height: 128px;
-
-    /* Azul escuro */
-
-    background: #2E7BA2;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+.nav-bar__links {
+  display: flex;
+  align-items: center;
 }
 
-#logo {
-
-    width: 233.9px;
-    height: 64px;
-
-    background: url(Logo1-branco.png);
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.nav-bar__links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 32px;
 }
 
-nav ul{
-
-    /* Auto layout */
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 32px;
-
-    width: 590px;
-    height: 40px;
-
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-
-}
