@@ -1,3 +1,7 @@
+html{
+  background-image: linear-gradient(#304968,#36C1A0,#4650BD);
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
