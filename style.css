@@ -1,4 +1,4 @@
-body {
+html {
   background-image: linear-gradient(#304968, #36c1a0, #4650bd);
 }
 
@@ -27,6 +27,7 @@ body {
   height: 417px;
   background-image: url("imagens/pexels-tobias-bjørkli-2113554.jpg");
   background-size: cover;
+
 
   display: flex;
   flex-direction: column;
@@ -92,51 +93,111 @@ body {
   background: #606ada;
 }
 
-.lineup h1 {
+.lineup {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 120px;
-  gap: 32px;
-  font-size: 64px;
-  font-family: "Calistoga", cursive;
 }
 
-.divider-date {
+.lineup h1 {
+  font-family: "Calistoga", cursive;
+  font-size: 64px;
+  padding: 32px 120px;
+}
+
+.lineup-day {
+  font-weight: bold;
+}
+
+.lineup-day .divider-date {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: auto;
-  height: 94px;
 
-  font-family: "Calistoga", cursive;
+  width: 1200px;
+  height: 94px;
 }
 
-.divider-date .divider {
+.lineup-day .date {
+  font-family: "Calistoga", cursive;
+  font-weight: normal;
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #008364;
+  gap: 10px;
+  padding: 16px;
+}
+
+.lineup-day .divider {
   width: 359.5px;
   height: 0px;
   border: 1px solid #008364;
 }
 
-.divider-date .date {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 417px;
-  height: 94px;
-
-  font-size: 48px;
-  background: #008364;
-}
-
 .artists {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
+  gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 56px;
 }
+
+.artists h3 {
+  font-size: 48px;
+}
+
+.artists h4 {
+  font-size: 40px;
+}
+
+.artists h5 {
+  font-size: 32px;
+}
+
+.artists h6 {
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.artists ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.banner-footer {
+  background-image: url("imagens/footer.png");
+  mix-blend-mode: multiply;
+  background-size: cover;
+  height: 338px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px 120px;
+  line-height: 40px;
+
+  font-size: 20px;
+  font-family: 'Raleway';
+  font-style: normal;
+
+}
+
+/* ========================== */
 
 @media screen and (max-width: 1130px) {
   .nav-bar img {
