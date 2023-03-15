@@ -118,6 +118,8 @@ html {
 
   width: 1200px;
   height: 94px;
+
+
 }
 
 .lineup-day .date {
@@ -130,14 +132,14 @@ html {
   align-items: center;
 
   background-color: #008364;
-  gap: 10px;
   padding: 16px;
 }
 
 .lineup-day .divider {
-  width: 359.5px;
-  height: 0px;
-  border: 1px solid #008364;
+  background-color: #008364;
+  height: auto;
+  width: auto;
+
 }
 
 .artists {
@@ -195,6 +197,12 @@ footer{
   font-family: 'Raleway';
   font-style: normal;
 
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 /* ========================== */
