@@ -28,7 +28,6 @@ html {
   background-image: url("imagens/pexels-tobias-bjørkli-2113554.jpg");
   background-size: cover;
 
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,6 +97,8 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .lineup h1 {
@@ -113,33 +114,28 @@ html {
 .lineup-day .divider-date {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
-  width: 1200px;
+  width: auto;
   height: 94px;
 
-
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 .lineup-day .date {
+  display: flex;
   font-family: "Calistoga", cursive;
   font-weight: normal;
   font-size: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   background-color: #008364;
   padding: 16px;
 }
 
 .lineup-day .divider {
-  background-color: #008364;
-  height: auto;
-  width: auto;
-
+  border: 1px solid #008364;
+  flex-grow: 1;
 }
 
 .artists {
@@ -150,6 +146,7 @@ html {
   gap: 32px;
   margin-top: 32px;
   margin-bottom: 56px;
+  flex-wrap: wrap;
 }
 
 .artists h3 {
@@ -175,34 +172,43 @@ html {
   justify-content: center;
   align-items: center;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 .banner-footer {
   background-image: url("imagens/footer.png");
   mix-blend-mode: multiply;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
   height: 338px;
 }
 
-footer{
+footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  padding: 50px 120px;
+  padding: 60px 120px;
+  gap: 16px;
   line-height: 40px;
 
   font-size: 20px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-style: normal;
-
 }
 
-.redes{
+.social-media {
   display: flex;
   flex-direction: row;
   gap: 8px;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: row;
 }
 
 /* ========================== */
@@ -230,6 +236,18 @@ footer{
 
   .dates-section h2 {
     width: 700px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer .div {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
   }
 }
 
